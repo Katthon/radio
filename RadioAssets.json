@@ -1,0 +1,142 @@
+[
+  {
+    "id": "cancion_01",
+    "artista": "Alan Walker",
+    "titulo": "Fade",
+    "duracion_segundos": 260,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Alan%20Walker%20-%20Fade%20%5BCOPYRIGHTED%20NCS%20Release%5D%20%5BD9syciL3Xsg%5D.mp3"
+  },
+  {
+    "id": "cancion_02",
+    "artista": "Alan Walker",
+    "titulo": "Spectre",
+    "duracion_segundos": 226,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Alan%20Walker%20-%20Spectre%20%5BCOPYRIGHTED%20NCS%20Release%5D%20%5BBSDPQ1uP7GI%5D.mp3"
+  },
+  {
+    "id": "cancion_03",
+    "artista": "Cartoon, Jéja",
+    "titulo": "C U Again ft. Mikk Mäe",
+    "duracion_segundos": 203,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Cartoon,%20J%C3%A9ja%20-%20C%20U%20Again%20ft.%20Mikk%20M%C3%A4e%20(Cartoon,%20J%C3%A9ja,%20Futuristik%20VIP)%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BNJNp6DnAAIo%5D.mp3"
+  },
+  {
+    "id": "cancion_04",
+    "artista": "Cartoon, Jéja",
+    "titulo": "On & On (feat. Daniel Levi)",
+    "duracion_segundos": 180,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Cartoon,%20J%C3%A9ja%20-%20On%20&%20On%20(feat.%20Daniel%20Levi)%20%EF%BD%9C%20Electronic%20Pop%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BK4DyBUG242c%5D.temp.mp3"
+  },
+  {
+    "id": "cancion_05",
+    "artista": "DEAF KEV",
+    "titulo": "Invincible",
+    "duracion_segundos": 273,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/DEAF%20KEV%20-%20Invincible%20%EF%BD%9C%20Glitch%20Hop%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BJ2X5mJ3HDYE%5D.mp3"
+  },
+  {
+    "id": "cancion_06",
+    "artista": "Desmeon",
+    "titulo": "Hellcat",
+    "duracion_segundos": 226,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Desmeon%20-%20Hellcat%20%EF%BD%9C%20Drumstep%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BJSY6vBPunpY%5D.mp3"
+  },
+  {
+    "id": "cancion_07",
+    "artista": "Different Heaven & EH!DE",
+    "titulo": "My Heart",
+    "duracion_segundos": 267,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Different%20Heaven%20&%20EH!DE%20-%20My%20Heart%20%EF%BD%9C%20Drumstep%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BjK2aIUmmdP4%5D.mp3"
+  },
+  {
+    "id": "cancion_08",
+    "artista": "Disfigure",
+    "titulo": "Blank",
+    "duracion_segundos": 209,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Disfigure%20-%20Blank%20%EF%BD%9C%20Melodic%20Dubstep%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5Bp7ZsBPK656s%5D.mp3"
+  },
+  {
+    "id": "cancion_09",
+    "artista": "Electro-Light",
+    "titulo": "Symbolism",
+    "duracion_segundos": 291,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Electro-Light%20-%20Symbolism%20%EF%BD%9C%20Trap%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5B__CRWE-L45k%5D.mp3"
+  },
+  {
+    "id": "cancion_10",
+    "artista": "Elektronomia",
+    "titulo": "Sky High",
+    "duracion_segundos": 238,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Elektronomia%20-%20Sky%20High%20%EF%BD%9C%20Progressive%20House%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BTW9d8vYrVFQ%5D.mp3"
+  },
+  {
+    "id": "cancion_11",
+    "artista": "Lost Sky",
+    "titulo": "Dreams pt. II (feat. Sara Skinner)",
+    "duracion_segundos": 215,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Lost%20Sky%20-%20Dreams%20pt.%20II%20(feat.%20Sara%20Skinner)%20%EF%BD%9C%20Trap%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5BL7kF4MXXCoA%5D.mp3"
+  },
+  {
+    "id": "cancion_12",
+    "artista": "Spektrem",
+    "titulo": "Shine",
+    "duracion_segundos": 259,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Spektrem%20-%20Shine%20%EF%BD%9C%20Progressive%20House%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5Bn4tK7LYFxI0%5D.mp3"
+  },
+  {
+    "id": "cancion_13",
+    "artista": "Syn Cole",
+    "titulo": "Feel Good",
+    "duracion_segundos": 182,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/Syn%20Cole%20-%20Feel%20Good%20%EF%BD%9C%20Future%20House%20%EF%BD%9C%20NCS%20-%20Copyright%20Free%20Music%20%5Bq1ULJ92aldE%5D.mp3"
+  },
+  {
+    "id": "cancion_14",
+    "artista": "TheFatRat",
+    "titulo": "Fly Away feat. Anjulie",
+    "duracion_segundos": 194,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20Fly%20Away%20feat.%20Anjulie%20%5BcMg8KaMdDYo%5D.mp3"
+  },
+  {
+    "id": "cancion_15",
+    "artista": "TheFatRat",
+    "titulo": "Jackpot",
+    "duracion_segundos": 196,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20Jackpot%20(Jackpot%20EP%20Track%201)%20%5BkL8CyVqzmkc%5D.mp3"
+  },
+  {
+    "id": "cancion_16",
+    "artista": "TheFatRat",
+    "titulo": "Monody (feat. Laura Brehm)",
+    "duracion_segundos": 291,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20Monody%20(feat.%20Laura%20Brehm)%20%5BB7xai5u_tnk%5D.mp3"
+  },
+  {
+    "id": "cancion_17",
+    "artista": "TheFatRat",
+    "titulo": "Never Be Alone",
+    "duracion_segundos": 263,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20Never%20Be%20Alone%20%5BIc-gZlPFTkQ%5D.mp3"
+  },
+  {
+    "id": "cancion_18",
+    "artista": "TheFatRat",
+    "titulo": "The Calling (feat. Laura Brehm)",
+    "duracion_segundos": 234,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20The%20Calling%20(feat.%20Laura%20Brehm)%20%5BKR-eV7fHNbM%5D.mp3"
+  },
+  {
+    "id": "cancion_19",
+    "artista": "TheFatRat",
+    "titulo": "Time Lapse",
+    "duracion_segundos": 185,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20Time%20Lapse%20%5B3fxq7kqyWO8%5D.mp3"
+  },
+  {
+    "id": "cancion_20",
+    "artista": "TheFatRat",
+    "titulo": "Xenogenesis",
+    "duracion_segundos": 236,
+    "url_audio": "https://github.com/Katthon/radio-assets/raw/refs/heads/main/TheFatRat%20-%20Xenogenesis%20(Outro%20Song)%20%5B2Ax_EIb1zks%5D.mp3"
+  }
+]

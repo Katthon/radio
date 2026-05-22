@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KSF Cyber Radio - Transmisión Digital Continua</title>
+  <meta name="description" content="Sintoniza KSF Cyber Radio: música digital continua con simulación en vivo, diseño retro-futurista cyberpunk y ecualizador dinámico interactivo." />
+  
+  <!-- Google Fonts para una tipografía moderna y de estilo cyberpunk/pantalla digital -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Enlace al archivo CSS separado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fondo con partículas brillantes dinámicas y gradiente neón -->
+  <div class="space-bg">
+    <div class="neon-orb orb-purple"></div>
+    <div class="neon-orb orb-cyan"></div>
+    <div class="cyber-grid"></div>
+  </div>
+
+  <main class="app-container">
+    <!-- Contenedor principal de la radio con efecto Glassmorphic -->
+    <section class="radio-deck" id="radioDeck">
+      
+      <!-- Esquinas decorativas retro-futuristas de interfaz táctica -->
+      <div class="deck-corner corner-tl"></div>
+      <div class="deck-corner corner-tr"></div>
+      <div class="deck-corner corner-bl"></div>
+      <div class="deck-corner corner-br"></div>
+
+      <!-- Cabecera de la Radio -->
+      <header class="radio-header">
+        <div class="station-branding">
+          <h1 class="station-title" id="stationTitle">KSF.CYBER</h1>
+          <span class="station-freq">FM 108.0 · DIGITAL DECK</span>
+        </div>
+        
+        <div class="status-panel">
+          <div class="live-indicator" id="liveIndicator">
+            <span class="pulse-dot"></span>
+            <span class="indicator-text" id="liveText">CONECTANDO</span>
+          </div>
+          <div class="signal-bars" id="signalStrength" title="Intensidad de señal">
+            <span class="sig-bar bar-1"></span>
+            <span class="sig-bar bar-2"></span>
+            <span class="sig-bar bar-3"></span>
+            <span class="sig-bar bar-4"></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Panel central de disco holográfico giratorio -->
+      <div class="hologram-viewport">
+        <div class="disc-container" id="discContainer">
+          <div class="vinyl-record" id="vinylRecord">
+            <div class="vinyl-lines"></div>
+            <div class="vinyl-center">
+              <div class="vinyl-core"></div>
+            </div>
+          </div>
+          <!-- Reflejo brillante táctil -->
+          <div class="disc-reflection"></div>
+        </div>
+        
+        <!-- Canvas para el Visualizador de Ondas Neon -->
+        <canvas class="wave-canvas" id="waveCanvas"></canvas>
+      </div>
+
+      <!-- Información del tema actual -->
+      <div class="track-info">
+        <div class="info-tag-wrapper">
+          <span class="now-playing-tag">TRANSMITIENDO AHORA</span>
+        </div>
+        <h2 class="track-title" id="trackTitle">Cargando estación...</h2>
+        <p class="track-artist" id="trackArtist">Por favor espera</p>
+      </div>
+
+      <!-- Controles de barra de progreso temporal -->
+      <div class="progress-section">
+        <div class="progress-bar-container" id="progressBarContainer">
+          <div class="progress-bar-fill" id="progressBarFill"></div>
+          <div class="progress-bar-ghost" id="progressBarGhost"></div>
+        </div>
+        <div class="time-display">
+          <span class="time-current" id="timeCurrent">00:00</span>
+          <div class="live-stream-badge">SEÑAL EN VIVO</div>
+          <span class="time-total" id="timeTotal">00:00</span>
+        </div>
+      </div>
+
+      <!-- Consola de Controles Físicos -->
+      <div class="control-console">
+        <!-- Botón para alternar la Playlist Lateral -->
+        <button class="icon-btn btn-playlist" id="btnPlaylistToggle" title="Ver Playlist Completa">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+          </svg>
+        </button>
+
+        <!-- Botón de Reproducción Principal -->
+        <button class="play-btn-large" id="btnPlayPause" title="Sintonizar / Pausar">
+          <div class="play-btn-inner">
+            <svg class="play-icon" id="playIconSvg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" id="playPath"/>
+            </svg>
+          </div>
+        </button>
+
+        <!-- Botón de Información / Incógnita Funcional -->
+        <button class="icon-btn btn-info" id="btnInfoToggle" title="Información sobre la Estación y Desarrollador">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.25z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Control de Volumen y Panel de Estática -->
+      <div class="audio-utilities">
+        <div class="volume-control-wrap">
+          <span class="vol-label">VOL</span>
+          <div class="slider-wrapper">
+            <input type="range" class="vol-slider" id="volSlider" min="0" max="1" step="0.01" value="0.80" />
+            <div class="vol-fill-track" id="volFillTrack"></div>
+          </div>
+          <span class="vol-percentage" id="volPct">80%</span>
+        </div>
+      </div>
+
+      <!-- Barra de Estado / Historial Rápido -->
+      <footer class="deck-footer">
+        <div class="status-msg" id="statusMessage">Iniciando sistemas digitales...</div>
+        <div class="song-counter" id="songCounter">20 CANCIONES</div>
+      </footer>
+
+    </section>
+
+    <!-- Backdrop para cerrar la playlist haciendo clic fuera -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Playlist Deslizable Lateral con Diseño Premium -->
+    <aside class="playlist-sidebar" id="playlistSidebar">
+      <header class="sidebar-header">
+        <h3>SINTONIZADOR DE CANCIONES</h3>
+        <button class="close-sidebar-btn" id="btnCloseSidebar" title="Cerrar Playlist">&times;</button>
+      </header>
+      
+      <!-- Panel de sintonía en vivo manual -->
+      <div class="tuning-broadcast-info">
+        <div class="broadcast-banner">
+          <span class="live-dot-pulse"></span>
+          <span>ESTACIÓN KSF-FM DE 24 HORAS</span>
+        </div>
+        <p>Haz clic en cualquier canción para pre-sintonizar el deck, o pulsa "EN VIVO" para volver a la sincronización global en tiempo real.</p>
+        <button class="live-tune-btn" id="btnLiveTune">
+          <svg viewBox="0 0 24 24" class="tune-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          SINTONIZAR TRANSMISIÓN EN VIVO
+        </button>
+      </div>
+
+      <div class="playlist-list-container" id="playlistListContainer">
+        <!-- Se rellenará dinámicamente con JavaScript -->
+      </div>
+    </aside>
+
+    <!-- Backdrop para el modal de información -->
+    <div class="info-modal-backdrop" id="infoModalBackdrop"></div>
+
+    <!-- Modal de Información (About / Help) con Glassmorphism -->
+    <div class="info-modal" id="infoModal">
+      <!-- Esquinas decorativas de interfaz táctica -->
+      <div class="deck-corner corner-tl"></div>
+      <div class="deck-corner corner-tr"></div>
+      <div class="deck-corner corner-bl"></div>
+      <div class="deck-corner corner-br"></div>
+      
+      <header class="modal-header">
+        <h3>SISTEMA DE INFORMACIÓN KSF</h3>
+        <button class="close-modal-btn" id="btnCloseInfo" title="Cerrar">&times;</button>
+      </header>
+      
+      <div class="modal-body">
+        <section class="info-section">
+          <div class="section-tag">DESARROLLADOR</div>
+          <h4>KATTHON</h4>
+          <p>Soy Katthon, un desarrollador independiente freelancer que busca hacer proyectos llamativos y funcionales.</p>
+        </section>
+        
+        <section class="info-section">
+          <div class="section-tag">APLICACIÓN</div>
+          <h4>KSF CYBER RADIO</h4>
+          <p>Esta aplicación es un reproductor digital de 20 pistas de música que simula de manera virtual una transmisión de radio en vivo continua las 24 horas.</p>
+          <ul class="cyber-list">
+            <li><strong>Transmisión Continua:</strong> La programación avanza en tiempo real a nivel global. Incluso al pausar la reproducción, la señal sigue su curso de forma teórica. Al sintonizarla de nuevo, la pista se reanudará exactamente en el segundo de emisión actual del loop continuo mundial.</li>
+            <li><strong>Visualizador Interactivo:</strong> Un canvas oscilatorio neón a 60 FPS que reacciona a la presencia y nivel del volumen del audio.</li>
+            <li><strong>Sintonizador Dual:</strong> Permite alternar libremente entre reproducción manual bajo demanda (haciendo clic en la playlist) y sincronía directa en vivo.</li>
+          </ul>
+        </section>
+      </div>
+      
+      <footer class="modal-footer">
+        <button class="cyber-btn btn-modal-live" id="btnModalLiveSync">
+          <svg viewBox="0 0 24 24" class="btn-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          SINTONIZAR EN VIVO
+        </button>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Efecto Overlay de Ruido Estático de Sintonización -->
+  <div class="static-noise-overlay" id="staticOverlay"></div>
+
+  <!-- Enlace al script JS -->
+  <script src="app.js"></script>
+</body>
+</html>
